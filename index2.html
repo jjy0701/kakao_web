@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>컴퓨터 공학과 정준영</title>
+</head>
+<body>
+    <script>
+     
+        let a = 0;
+        const welcomeElement = '페이지에 오신걸 환영합니다.';
+        document.write(welcomeElement);
+        
+        const messages1 = `저는 컴퓨터 공학과에 재학중인 정준영 입니다!`;
+        const messages2 = `현재 저는 3학년 입니다!`;
+        const messages3 = `현재 저는 그래픽스 연구실에 소속중 입니다!`;
+        
+        
+        function first(){
+            document.write(messages1);
+        }
+        
+        function second(){
+            document.write(messages2);
+        }
+        
+        function third(){
+            document.write(messages3);
+        }
+       
+        setInterval(() => {
+            if(a%3 == 0){
+                first();
+                a++;}
+            else if(a%3 == 1){
+                second();
+                a++;
+            }
+            else{
+                third();
+                a++;
+            }
+        }, 3000);
+        
+    </script>
+</body>
+</html>
